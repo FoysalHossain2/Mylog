@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Face Declarations */
+@font-face {
+  font-family: "Seravek";
+  font-weight: 300;
+  font-style: normal;
+  src: url("/fonts/seravek-light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Seravek";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/seravek.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Seravek";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/seravek-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Seravek";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/seravek-bold.otf") format("opentype");
+}
+
+@layer base {
+  * {
+    @apply box-border p-0 m-0;
+  }
+  * {
+    @apply m-0 p-0 outline-none box-border;
+  }
+
+  a {
+    @apply no-underline inline-block;
+  }
+
+  /* ul,
+  li,
+  ol {
+    @apply list-none;
+  } */
+
+  img {
+    @apply align-middle;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-seravek font-normal;
+  }
+}
+
+.container_fluid {
+  @apply w-full px-4 lg:px-16 max-w-[1664px] mx-auto;
+}
+
+.nav_links {
+  @apply inline-block p-2 cursor-pointer transition-all duration-300 ease-in-out overflow-hidden;
+}
+
+.link_label_wrapper {
+  @apply relative inline-block overflow-hidden;
+}
+
+.link_label {
+  @apply block transition-transform duration-300 ease-in-out;
+}
+
+.link_label:nth-child(1) {
+  @apply transform-none;
+}
+
+.link_label:nth-child(2) {
+  @apply absolute top-0 left-0 transform translate-y-full;
+}
+
+.nav_links:hover .link_label:nth-child(1) {
+  @apply -translate-y-full;
+}
+
+.nav_links:hover .link_label:nth-child(2) {
+  @apply translate-y-0;
+}
+
+/* privacy component */
+.privacyHtag {
+  @apply text-[#F0F7FE] text-2xl font-normal leading-[140%];
+}
+
+.privacyPtag {
+  @apply text-[#F0F7FEB8] text-[20px] font-normal leading-[140%];
+}
+/* privacy component */
+
+.gradient-text {
+  background: linear-gradient(90deg, #ed125f 0%, #8d2063 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgb(31, 58, 110) 0%, #7b2058 100%);
+  filter: blur(120px);
+}
