@@ -20,7 +20,7 @@ const ServiceCard = () => {
 
             <div className="mt-12 flex items-center">
               <div
-                className="h-[90px] w-full rounded-full relative overflow-hidden box-border border border-[#0B1F42] bg-[#030E21] group-hover:bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s')] transition-all ease-in-out duration-300"
+                className="h-[90px] w-full rounded-full relative overflow-hidden box-border border border-[#0B1F42] bg-[#030E21] group-hover:bg-[url('https://img.freepik.com/premium-photo/tech-support-services_1246656-4425.jpg?semt=ais_hybrid')] transition-all ease-in-out duration-300"
                 style={{
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",

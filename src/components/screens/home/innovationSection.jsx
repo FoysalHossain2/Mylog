@@ -3,6 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useState } from "react";
 import Image from "next/image";
 import { testimonials } from "@/data/home";
+import Button from "@/components/commoneComponent/Button";
 
 export default function InnovationSection() {
   const [index, setIndex] = useState(0);
@@ -16,16 +17,16 @@ export default function InnovationSection() {
   };
 
   return (
-    <section className="bg-[#0B1120] text-white py-16 px-4 md:px-8 lg:px-16 xl:px-24">
+    <section className=" text-white py-16 px-4 md:px-8 lg:px-16 xl:px-24">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-[33%] text-center md:text-left">
-          <span className="text-sm mb-2 py-1 px-3 bg-gradient-to-r from-blue-600 to-pink-800 bg-clip-text text-transparent">
+          <Button>
             Careers
-          </span>
-          <h2 className="text-3xl md:text-4xl font-semibold mt-4">
+          </Button>
+          <h2 className="text-5xl md:text-4xl font-normal mt-6 leading-[100%]">
             Excellence, Integrity & Innovation
           </h2>
-          <p className="mt-4 text-gray-400">
+          <p className="mt-4 text-[#F0F7FEB8] text-[19px] leading-[140%]">
             At Log-U, our culture is built on a foundation of{" "}
             <strong className="text-white">
               expertise, trust, and forward-thinking innovation.
@@ -38,7 +39,7 @@ export default function InnovationSection() {
           <div className="flex items-center lg:ml-44 md:justify-start gap-4 mt-4">
             <button
               onClick={nextSlide}
-              className="p-3 rounded-full bg-gray-950"
+              className="p-3 rounded-full bg-"
             >
               <div className="group relative inline-flex items-center overflow-hidden">
                 <FaArrowLeft className="relative text-md mt-2 -right-2 group-hover:right-8 transition-all duration-300 ease-out" />
@@ -50,7 +51,7 @@ export default function InnovationSection() {
             </span>
             <button
               onClick={prevSlide}
-              className="p-3 rounded-full bg-gray-950"
+              className="p-3 rounded-full bg-"
             >
               <div className="group relative inline-flex items-center overflow-hidden">
                 <FaArrowRight className="relative text-md mt-2 left-2 group-hover:left-8 transition-all duration-300 ease-out" />
@@ -68,7 +69,7 @@ export default function InnovationSection() {
             {testimonials.map((testimonial, i) => (
               <div
                 key={i}
-                className="min-w-[80%] bg-[#131A2A] p-6 rounded-xl shadow-lg flex flex-col md:flex-row gap-6"
+                className="min-w-[80%] bg-gradient-to-b from-[#05142C] to-[#030F22] p-6 rounded-xl shadow-lg flex flex-col md:flex-row gap-x-10"
               >
                 <div className="w-[40%]">
                   <div className="flex flex-col ">

@@ -18,7 +18,7 @@ const ServiceHero = () => {
       </div>
       
       {/* Right decorative swirl */}
-      <div className="-z-10 absolute lg:-bottom-3 -bottom-[390px] lg:right-[1px] right-[1px]  rotate-">
+      <div className="-z-10 absolute lg:-bottom-24 -bottom-[390px] lg:right-[1px] right-[1px]  rotate-">
       <Image 
             src={Vectorbottom} 
             alt="" 
@@ -28,7 +28,7 @@ const ServiceHero = () => {
         />
       </div>
 
-        <div className="py-28 lg:py-0 flex flex-col items-center justify-center z-50">
+        <div className=" lg:py-0 flex flex-col items-center justify-center z-50">
             <Button>
             Team Extension
             </Button>
