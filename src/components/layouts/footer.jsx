@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <>
-       <footer className="container_fluid  text-white py-6 px-4 md:px-12 ">
+       <footer className="container_fluid  text-white py-6 ">
      
      <div className=" flex flex-col md:flex-row justify-between items-">
       {/*--- logo part ---*/}
@@ -16,7 +16,7 @@ export default function Footer() {
        </div>
 
        {/*--- flag part ---*/}
-       <div className="flex items-start flex-co md:flex-row  md:items-end gap-x-44 mt-6 md:mt-0">
+       <div className="flex items-start flex-co md:flex-row  md:items-end lg:gap-x-44 gap-x-16 mt-20 md:mt-0 lg:mt-0">
         
          <div>
            <h4 className="text-gray-300 font-bold text-base leading-[100%]">
@@ -34,7 +34,7 @@ export default function Footer() {
 
          
          <div className="flex flex-col gap-2 ">
-           <div className="flex items-center justify-between gap-x-16">
+           <div className="flex items-center justify-between lg:gap-x-16 gap-x-6">
              <a href="https://linkedin.com/company/log-u" className=" items-center gap-2 text-gray-400 hover:text-white">
                  <span className="text-sm">LinkedIn</span>
                  <p>/company.log-u</p>

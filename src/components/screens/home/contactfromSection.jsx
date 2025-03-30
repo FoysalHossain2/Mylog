@@ -38,17 +38,18 @@ export default function Configurator() {
   return (
     <div className="flex flex-col max-w-[820px] mx-auto justify-center items-center space-y-6 py-20">
       <Button>Contact</Button>
-      <h1 className="text-2xl md:text-4xl font-regular text-center mb-6 px-[100px]">
+      <h1 className="text-2xl lg:text-5xl font-normal leading-[100%] text-center mb-6 px-[20px]">
         Hi there! Use our configurator & start building.
       </h1>
 
-      <div className="flex items-center space-x-2 mb-6 max-w-full mx-auto">
+      <div className="flex items-center space-x-2 mb-8 max-w-full mx-auto">
+        
         {steps.map((step) => (
           <div key={step} className="flex items-center">
             <motion.div
-              className={`w-10 h-10 flex items-center justify-center rounded-full border-2 transition-all duration-300 ${
+              className={`w-10 h-10 text-xl flex items-center justify-center rounded-full border-2 transition-all duration-300 ${
                 step <= currentStep
-                  ? "border-blue-500 bg-blue-500"
+                  ? "border-[#3276DE] bg-[#3276DE] text-black"
                   : "border-gray-600"
               }`}
               initial={{ scale: 0.8 }}
@@ -57,20 +58,21 @@ export default function Configurator() {
               {step}
             </motion.div>
             {step !== steps.length && (
-              <div className="w-24 h-[2px] bg-gray-600"></div>
+              <div className="w-8 md:w-20 lg:w-24 h-[4px] border-b-4 border-dashed border-[#3276DE]"></div>
             )}
           </div>
         ))}
       </div>
-      <p className="pb-5">
+      <hr className="text-white" />
+      <p className="pb-5 pt-6 text-2xl leading-[140%]">
         Answer a few quick questions and let’s build something great together
       </p>
 
-      <div className="w-full max-w-lg">
+      <div className="w-full max-w-xl">
         {currentStep === 1 && (
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <label
-              className={`flex items-center px-5 py-2 rounded-full transition border cursor-pointer ${
+              className={`flex items-center px-8 py-6 rounded-full transition border cursor-pointer ${
                 selectedOption === "product"
                   ? " text-white border-gray-800"
                   : "bg-[#030E21] border-gray-800"
@@ -108,7 +110,7 @@ export default function Configurator() {
             </label>
 
             <label
-              className={`flex items-center px-5 py-2 rounded-full transition border cursor-pointer ${
+              className={`flex items-center px-8 py-6  rounded-full transition border cursor-pointer ${
                 selectedOption === "talent"
                   ? " text-white border-gray-800"
                   : "bg-[#030E21] border-gray-800"

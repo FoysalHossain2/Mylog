@@ -2,7 +2,7 @@ import Navbar from "@/components/layouts/navbar";
 import "../styles/globals.css";
 import Footer from "@/components/layouts/footer";
 export const metadata = {
-  title: "Log-U - Home",
+  title: "Log_U",
   description:
     "Log-U - You have the idea. We have the expertise. At Log-U, we build and scale high-performance tech teams and deliver turnkey software solutions that move your business forward.",
 };

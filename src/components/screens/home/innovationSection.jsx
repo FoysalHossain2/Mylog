@@ -17,13 +17,14 @@ export default function InnovationSection() {
   };
 
   return (
-    <section className=" text-white py-16 px-4 md:px-8 lg:px-16 xl:px-24">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div className="md:w-[33%] text-center md:text-left">
+    <section className=" text-white py-16 ">
+      <div className="container_fluid flex flex-col md:flex-row items-center gap-12">
+
+        <div className="md:w-[33%] text-left">
           <Button>
             Careers
           </Button>
-          <h2 className="text-5xl md:text-4xl font-normal mt-6 leading-[100%]">
+          <h2 className="lg:text-5xl text-4xl font-normal mt-6 leading-[100%]">
             Excellence, Integrity & Innovation
           </h2>
           <p className="mt-4 text-[#F0F7FEB8] text-[19px] leading-[140%]">
@@ -61,15 +62,15 @@ export default function InnovationSection() {
           </div>
         </div>
 
-        <div className="md:w-[67%] relative overflow-hidden">
+        <div className="md:w-[67%] lg:w-[67%] sm:w-[67%] w-[97%] relative overflow-hidden ">
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-500 ease-in-out "
             style={{ transform: `translateX(-${index * 100}%)` }}
           >
             {testimonials.map((testimonial, i) => (
               <div
                 key={i}
-                className="min-w-[80%] bg-gradient-to-b from-[#05142C] to-[#030F22] p-6 rounded-xl shadow-lg flex flex-col md:flex-row gap-x-10"
+                className="min-w-[80%] bg-gradient-to-b from-[#05142C] to-[#030F22] p-6 rounded-xl shadow-lg flex flex-col sm:flex-col md:flex-row lg:flex-row gap-6 md:gap-x-10"
               >
                 <div className="w-[40%]">
                   <div className="flex flex-col ">
@@ -86,11 +87,13 @@ export default function InnovationSection() {
                     <p className="text-sm text-gray-400">{testimonial.role}</p>
                   </div>
                 </div>
-                <div className="w-[60%]">
+
+                <div className="w-full lg:max-w-[60%]">
                   <p className="text-gray-300 md:text-left">
                     {testimonial.text}
                   </p>
                 </div>
+
               </div>
             ))}
           </div>
