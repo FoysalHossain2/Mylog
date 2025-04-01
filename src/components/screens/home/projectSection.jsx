@@ -40,7 +40,7 @@ const ProjectSection = () => {
   return (
     <section className="bg-gradient-to-r from-[#1F3A6E] to-[#3276DE] text-white p-6 md:p-12 space-y-8 relative">
       <div className="space-y-4">
-        <h3 className="text-[16px] font-medium font-seravek text-blue-50 bg-blue-900 inline-block py-2 px-3 rounded-full">
+        <h3 className="text-[16px] font-medium font-seravek text-blue-50 bg-blue-900 inline-block py-2 rounded-full">
           Past Projects
         </h3>
         <h1 className="text-[48px] font-regular font-seravek text-blue-50">
@@ -54,7 +54,7 @@ const ProjectSection = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-center space-x-4 absolute top-60 right-[80px] transform -translate-y-1/2 text-white font-seravek">
+      <div className="flex items-center justify-center absolute top-60 right-[80px] transform -translate-y-1/2 text-white font-seravek">
         <button onClick={prevSlide}>
           <div className="group relative inline-flex items-center overflow-hidden">
             <FaArrowLeft className="relative text-md mt-2 -right-1 group-hover:right-5 transition-all duration-300 ease-out" />

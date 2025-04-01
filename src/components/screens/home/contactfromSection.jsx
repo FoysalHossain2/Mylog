@@ -304,11 +304,11 @@ export default function Configurator() {
         )}
       </div>
 
-      <div className="flex justify-end lg:ml-80 w-full max-w-lg my-3">
+      <div className="flex justify-end lg:ml-80 w-full max-w-sm my-3">
         {currentStep > 1 && (
           <button
             onClick={handlePrev}
-            className="group hover:text-white flex items-center px-5 py-2 bg-white text-gray-700 rounded-full  transition hover:bg-transparent border hover:border-gray-500"
+            className="group hover:text-white flex items-center px-5 py-2 max-w-[356px] bg-white text-gray-700 rounded-full  transition hover:bg-transparent border hover:border-gray-500"
           >
             <div className="group ml-1 -mt-2 relative inline-flex items-center overflow-hidden">
               <FiArrowLeft className="relative text-md mt-2 -right-1 group-hover:right-4 transition-all duration-300 ease-out" />
