@@ -15,7 +15,7 @@ const HomePage = () => {
       <ProjectSection />
       <Configurator />
       <InnovationSection />
-      <MeetSection />
+      {/* <MeetSection /> */}
     </>
   );
 };
