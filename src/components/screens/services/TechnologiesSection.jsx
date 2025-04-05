@@ -31,7 +31,7 @@ const TechnologiesSection = () => {
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
                   className={cn(
-                    `mb-2 lg:px-4 px-0 text-sm lg:text-base text-[#F0F7FEB8] transition-colors relative `,
+                    `mb-2 px-4 text-sm 1664:text-base text-[#F0F7FEB8] transition-colors relative `,
                     {
                       "text-[#F0F7FE] font-semibold":
                         activeCategory === category.id,
@@ -45,7 +45,7 @@ const TechnologiesSection = () => {
 
               {/* Moving Animated Border */}
               <div
-                className="absolute bottom-0 h-[3px] bg-blue-500 w-6 transition-all duration-500 ease-in-out mt-2"
+                className="absolute bottom-0 h-[4px] bg-blue-500 transition-all duration-500 ease-in-out mt-2"
                 style={{
                   width: `${100 / categories.length}%`,
                   transform: `translateX(${
@@ -58,22 +58,32 @@ const TechnologiesSection = () => {
           </div>
 
           {/* Technologies logos */}
-          <div className="ml-4 flex flex-row items-center gap-x-5 md:gap-12">
+          <div className="ml-4 flex flex-row items-center gap-x-8 md:gap-12">
             <div className=" h-14 relative flex items-center justify-center">
-            {activeCategory === "backend" && (
-                <div className="space-x-6 flex flex-wrap space-y-4">
-                  <Image src={Nodejs} alt="Node.js" width={70} height={70} />
-                  <Image src={python} alt="Node.js" width={70} height={70} />
-                  <Image src={java} alt="Node.js" width={60} height={60} />
-                  <Image src={dotnet} alt="Node.js" width={60} height={60} />
-                  <Image src={golang} alt="Node.js" width={60} height={60} />
+              {activeCategory === "backend" && (
+                <div className="space-x-8 space-y-6 flex flex-wrap items-center">
+                  <div className="object-cover">
+                    <Image src={Nodejs} alt="Node.js" width={90} height={70} />
+                  </div>
+                  <div className="object-cover">
+                    <Image src={python} alt="Node.js" width={90} height={70} />
+                  </div>
+                  <div className="object-cover">
+                    <Image src={java} alt="Node.js" width={70} height={70} />
+                  </div>
+                  <div className="object-cover">
+                    <Image src={dotnet} alt="Node.js" width={70} height={70} />
+                  </div>
+                  <div className="object-cover">
+                    <Image src={golang} alt="Node.js" width={70} height={70} />
+                  </div>
                 </div>
               )}
+
               {activeCategory === "frontend" && (
-                <div className="space-x-6 flex">
+                <div className="space-x-8 flex">
                   <Image src={Nodejs} alt="Node.js" width={70} height={70} />
                   <Image src={python} alt="Node.js" width={70} height={70} />
-                  <Image src={java} alt="Node.js" width={60} height={60} />
                 </div>
               )}
             </div>
